@@ -1,0 +1,17 @@
+
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width")
+        title #{title} | Library Branches
+    body
+        header#header
+        div.header-content
+            h2#site-name
+            a(href="/") Library Branches
+        main#main
+        h1 Libraries
+        each branch in branches
+            div
+            h2
+                a(href=`/library/${(branch.id)}`) #{branch.name}
